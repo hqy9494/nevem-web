@@ -1,0 +1,34 @@
+.DeliveryOrder-page {
+}
+
+.DeliveryOrder-dash-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 16px;
+  background-color: #fff;
+  .DeliveryOrder-dash-icon {
+    width: 20%;
+    padding-bottom: 20%;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .DeliveryOrder-dash-main {
+    .DeliveryOrder-dash-num {
+      display: block;
+      font-size: 24px;
+      text-align: right;
+    }
+    .DeliveryOrder-dash-title {
+      display: block;
+      color: #999;
+      text-align: right;
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,82 @@
+.descList {
+  // offset the padding-bottom of last row
+  :global {
+    .ant-row {
+      margin-bottom: -16px;
+      overflow: hidden;
+    }
+  }
+
+  .desc-title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    margin-bottom: 16px;
+    border-left: 5px solid #23b7e5;
+    padding-left: 12px;
+  }
+
+  .desc-term {
+    line-height: 22px;
+    padding-bottom: 16px;
+    margin-right: 8px;
+    color: rgba(0, 0, 0, 0.85);
+    white-space: nowrap;
+    display: table-cell;
+
+    &:after {
+      content: ":";
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+
+  .desc-detail {
+    line-height: 22px;
+    width: 100%;
+    padding-bottom: 16px;
+    color: rgba(0, 0, 0, 0.65);
+    display: table-cell;
+  }
+
+  &.small {
+    // offset the padding-bottom of last row
+    :global {
+      .ant-row {
+        margin-bottom: -8px;
+      }
+    }
+    .desc-title {
+      margin-bottom: 12px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .desc-term,
+    .desc-detail {
+      padding-bottom: 8px;
+    }
+  }
+
+  &.large {
+    .desc-title {
+      font-size: 16px;
+    }
+  }
+
+  &.desc-vertical {
+    .desc-term {
+      padding-bottom: 8px;
+      display: block;
+    }
+
+    .desc-detail {
+      display: block;
+    }
+  }
+  .user-block-picture {
+    position: absolute;
+    top: 45%;
+    left: 17px;
+    transform: translateY(-50%);
+  }
+}

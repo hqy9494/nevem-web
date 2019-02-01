@@ -1,0 +1,20 @@
+.permission-row {
+  border-bottom: 1px solid #eee;
+  .permission-col {
+    padding: 16px 0;
+    border-right: 1px solid #eee;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &:first-child {
+      border-left: 1px solid #eee;
+    }
+  }
+  .permission-row-head {
+    font-weight: bold;
+  }
+  &:first-child {
+    border-top: 1px solid #eee;
+  }
+}

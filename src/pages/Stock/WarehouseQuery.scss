@@ -1,0 +1,33 @@
+.WarehouseQuery-page {
+}
+
+.WarehouseQuery-dash-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 16px;
+  background-color: #fff;
+  .WarehouseQuery-dash-icon {
+    width: 20%;
+    padding-bottom: 20%;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .WarehouseQuery-dash-main {
+    .WarehouseQuery-dash-num {
+      display: block;
+      font-size: 24px;
+      text-align: right;
+    }
+    .WarehouseQuery-dash-title {
+      display: block;
+      color: #999;
+      text-align: right;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,458 @@
+/* 全局样式 */
+.containerWrap {
+  margin-top: 54px;
+  margin-bottom: 54px;
+  background-color: #eee;
+  font-family: "Microsoft Yahei";
+}
+/* 灰色 */
+.c-gray {
+  color: #9e9e9e;
+}
+/* 黑色 */
+.c-999 {
+  color: #999;
+}
+.c-333 {
+  color: #333;
+}
+
+/* 橙色 */
+.c-green {
+  color: rgb(82, 196, 26);
+}
+
+/* 橙色 */
+.c-origin {
+  color: #108ee9;
+}
+.c-blue-1 {
+  color: #11aee9;
+}
+/* 蓝色 */
+.c-blue {
+  color: #0e77ca;
+}
+
+.c-orange {
+  color: #ff670b;
+}
+/* 红色 */
+.c-red {
+  color: #f06666;
+}
+.p-10{
+  padding: 10px;;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.pt-20{
+  padding-top: 20px;
+}
+.p-20{
+  padding: 20px;
+}
+.pb-20{
+  padding-bottom: 20px;
+}
+/* 右对齐 */
+.ta-r {
+  text-align: right;
+}
+.ta-c {
+  text-align: center;
+}
+.ta-r-i {
+  text-align: right !important;
+}
+.ta-c-i {
+  text-align: center !important;
+}
+.w-100per {
+  width: 100%;
+}
+.h-100per{
+  height: 100%;
+}
+.w-50per {
+  width: 50%;
+}
+
+.fz-14 {
+  font-size: 14px;
+}
+.fz-16 {
+  font-size: 16px;
+}
+/* 全局搜索按钮 */
+.default-button:hover,
+.default-button:focus,
+.default-button:active {
+  border-color: #108ee9;
+  color: #108ee9 !important;
+}
+.search-button,
+.search-button:hover,
+.search-button:focus,
+.search-button:active {
+  background-color: #108ee9;
+  border-color: #108ee9;
+  color: #fff !important;
+}
+
+.c-h-origin:hover,
+.c-h-origin:focus,
+.c-h-origin:active {
+  color: #108ee9 !important;
+}
+/* tabel 图片 固定高度72px */
+.daka-table-img-wrap {
+  height: 72px;
+}
+.daka-table-img-wrap > img {
+  height: 100%;
+}
+/* 溢出省略 */
+.showHide-20 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 252px;
+}
+.showHide-30 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 378px;
+}
+
+/* 标题 */
+.project-title {
+  line-height: 32px;
+  border-left: 2px solid #45c2e9;
+  font-size: 17px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* 响应式表格 */
+.project-table-responsive .ant-table-body {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+/* 详情页的数据下划线 */
+.project-form-textline {
+  border-bottom: 1px solid #ccc;
+}
+
+.project-hover-point:hover {
+  cursor: pointer;
+}
+/* 列表样式*/
+.form-contain {
+  padding: 20px;
+  background: #fff;
+}
+.table-contain {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+}
+
+.page-select-120 {
+  width: 120px !important;
+}
+.page-select-150 {
+  width: 150px !important;
+}
+
+.TableExpand {
+  .ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+    font-size: 12px;
+  }
+}
+.TableExpand .ant-table-thead > tr > th{
+  white-space: nowrap;
+  font-size: 12px;
+}
+/*重写头部headerLogo样式*/
+.navbar-brand{
+    .brand-logo{font-size: 24px;
+        img.img-responsive{display: inline-block;margin:0 15px 0 0!important;position: relative;top: -3px;width: 28px;height: 28px;}
+    }
+    .brand-logo-collapsed{
+        img.img-responsive{width: 40px;height: 40px;}
+    }
+}
+/*重写Menu样式*/
+@media screen and (max-width: 750px) {
+    #app .wrapper{overflow: scroll;-webkit-overflow-scrolling: touch;
+        .userBox{margin: 0!important;margin-right: -20px!important;li{color: #000!important;}&:active,&:hover{background-color: #e1e1e1!important;}}
+        .sidebar{overflow-y: scroll;-webkit-overflow-scrolling: touch;}
+        .sidebar > .nav{margin-top: 50px;}
+       .xyxs-rightContent{overflow: scroll;-webkit-overflow-scrolling: touch;margin-top: 150px!important;width: 1000px!important;overflow-x: auto;background-color: #fff!important;padding: 0!important;} 
+    }
+    #user-block-toggle{display: none!important;}
+}
+#app .wrapper{background: #f5f5f5;
+    .xyxs-rightContent{min-height: 100%;position: absolute!important;left: 220px;margin: 0;margin-bottom: 0!important;transition-property:left,width!important;width: calc(100% - 220px);top: 0;padding-top: 55px;background-color:#f5f5f5;
+        .content-page{background-color: transparent;padding: 16px 28px 0 12px;height: 100%;
+            >div>section,>div>div{height: 100%;background: #fff;}
+        }
+        .AsyncContentPaddingBox{padding: 0 26px 0 36px;}
+    }
+    .aside{
+      .sidebar:after{width: 0px;} 
+      ul.nav{
+        .nav-heading{font-size: 14px;color: #333333;margin-left: 10px;}
+        >li.active{
+          div.nav-item{border-left:3px solid #3CBCE5;background: #EFEFEF;transition-property:background-color,border-left-width;}
+        }
+        >li{ border: none!important;
+            div.nav-item{transition-property:background-color,border-left-width; em{i.anticon{position: relative;/*top: -4px;*/}}}
+             .sidebar-subnav .active i.circleClass{background: #3CBCE5!important;}
+            .sidebar-subnav i.circleClass{top: -1px;height: 8px;width:8px;background: #a1a1a1;display: inline-block;border-radius:50%;margin-right: 20px;position: relative;}
+            .nav-item i.icon{display: inline-block;width: 8px;height:4px;background: url(../../assets/img/down.png) no-repeat;background-size:100% 100%;transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);float: right;top: 8px;position: relative;}
+            .nav-item i.upClass{
+                background: url(../../assets/img/up.png) no-repeat;
+                transform: rotateX(180deg);
+            }
+        }
+       
+       }
+    }
+}
+@media screen and (max-width: 767px) {
+    .wrapper>.xyxs-rightContent {
+        position: relative!important;left: 0!important;
+    }
+}
+/*重写缩进时Menu样式*/
+.aside-collapsed{
+    .xyxs-rightContent{left: 70px!important;width: calc(100% - 70px)!important;}
+    .detailTemplate{
+        .buttonGrop{left: 118px!important;width: calc(100% - 190px)!important;}
+    }
+    .aside ul.nav>li{
+       .nav-item{
+           background: #fff!important;
+           i.icon{display: none!important;}
+       } 
+    }  
+}
+
+/*公共Table*/
+.publicTable{
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td{padding: 10px 16px;font-size: 12px;}
+    .ant-table-thead tr th{background-color: #f5f5f5!important;}
+    .ant-table-pagination{
+      .ant-pagination-item-link,.ant-pagination-item-container{
+        position: relative;
+        height: 32px;
+        >i.anticon{position: absolute;left: 0;top: 0;bottom: 0;right: 0;margin: auto;height: 12px;}
+      }
+    }
+}
+
+/*
+.aside{
+   .sidebar:after{width: 0px;} 
+   ul.nav>.ant-menu{border-right:none;
+    >.ant-menu-item{a{padding-left: 25px;}}
+    a{text-decoration:none!important;
+      &::before{width: 8px;height: 8px;display: inline-block;background: #e1e1e1;border-radius:50%;margin:16px 13px 16px 27px;}
+    }
+    .ant-menu-item-selected{background:#fff; 
+      &::after{border-right:none!important;}
+      a{color: #3CBCE5;
+        &::before{background: #3CBCE5!important;}
+      }
+    }
+  }
+   .ant-menu-submenu-selected>.ant-menu-submenu-title{background: #EFEFEF;border-left:3px solid #3CBCE5!important;transition-property:background-color,border-left-width;}
+}
+ */
+
+
+
+
+/*公用实心按钮*/
+.successButton{background: #3dcabb!important;border-color:#3dcabb!important;color:#ffffff!important;}
+.successButton:hover{background:#66ecde!important;border-color:#66ecde!important;}
+.successButton:active{background: #30bbac!important;border-color:#30bbac!important;}
+
+.successMoreButton{background: #ff7e75  !important;border-color:#ff7e75 !important;color:#ffffff!important;}
+.successMoreButton:hover{background: #ffa49d !important;border-color:#ffa49d !important;}
+.successMoreButton:active{background: #e56363 !important;border-color:#e56363 !important;}
+
+.purpleMoreButton{background: #7897ee  !important;border-color:#7897ee !important;color:#ffffff!important;}
+.purpleMoreButton:hover{background: #84a5ff !important;border-color:#84a5ff !important;}
+.purpleMoreButton:active{background: #5d75b9 !important;border-color:#5d75b9 !important;}
+
+.orangeButton{background: #f8a554!important;border-color:#f8a554!important;color:#fff!important;}
+.orangeButton:hover{background:#f3b981!important;border-color:#f3b981!important;}
+.orangeButton:active{background: #f3b981!important;border-color:#f3b981!important;}
+
+.yellowButton{background: #ffcd75!important;border-color:#ffcd75!important;color:#fff!important;}
+.yellowButton:hover{background:#ffcd75!important;border-color:#ffcd75!important;}
+.yellowButton:active{background: #f3b981!important;border-color:#f3b981!important;}
+
+.infoButton{background: #0692f3!important;border-color:#0692f3!important;color:#ffffff!important;}
+.infoButton:hover{background: #6fbaef!important;border-color:#6fbaef!important;}
+.infoButton:active{background: #0872bb!important;border-color:#0872bb!important;}
+
+.unUseButton{background: #ccc!important;border-color:#ccc!important;color:#fff!important;}
+
+/*空心按钮*/
+.buttonListDanger{background: #fff!important;border-color:#FC5874!important;color:#FC5874!important;font-size: 12px;
+  &:hover{background: #FC5874!important;color:#fff!important;}
+  &:active{background: #E8506A!important;color:#fff!important;}
+}
+.buttonListMoreOne{background: #fff!important;border-color:#489DFC!important;color:#489DFC!important;font-size: 12px;
+  &:hover{background: #489DFC!important;color:#fff!important;}
+  &:active{background: #408EE6!important;color:#fff!important;}
+}
+.buttonListMoreTwo{background: #fff!important;border-color:#41619F!important;color:#41619F!important;font-size: 12px;
+  &:hover{background: #41619F!important;color:#fff!important;}
+  &:active{background: #385792!important;color:#fff!important;}
+}
+
+.buttonListFirst{background: #fff!important;border-color:#3FBDE4!important;color:#3FBDE4!important;font-size: 12px;
+  &:hover{background: #3FBDE4!important;color:#fff!important;}
+  &:active{background: #2FADD4!important;color:#fff!important;}
+}
+.buttonListSecond{background: #fff!important;border-color:#3AD0B1!important;color:#3AD0B1!important;font-size: 12px;
+  &:hover{background: #3AD0B1!important;color:#fff!important;}
+  &:active{background: #35BDA1!important;color:#fff!important;}
+}
+.buttonListThird{background: #fff!important;border-color:#489DFC!important;color:#489DFC!important;font-size: 12px;
+  &:hover{background: #489DFC!important;color:#fff!important;}
+  &:active{background: #408EE6!important;color:#fff!important;}
+}
+.buttonListFourth{background: #fff!important;border-color:#FDB75B!important;color:#FDB75B!important;font-size: 12px;
+  &:hover{background: #FDB75B!important;color:#fff!important;}
+  &:active{background: #F5A338!important;color:#fff!important;}
+}
+.buttonListFifth{background: #fff!important;border-color:#FF9561!important;color:#FF9561!important;font-size: 12px;
+  &:hover{background: #FF9561!important;color:#fff!important;}
+  &:hover{background: #FC8145!important;color:#fff!important;}
+}
+.buttonListSixth{background: #fff!important;border-color:#ddd!important;color:#ddd!important;
+  &:hover{background: #ddd!important;color:#fff!important;}
+  &:hover{background: #ddd!important;color:#fff!important;}
+}
+/*公共状态*/
+.publicTitle{margin:0 0 10px 0;font-size: 20px;padding-left: 17px;color: #000;}
+/*表正常状态*/
+.statusBlueOne{color:#489DFC!important;}
+.statusBlueTwo{color:#41619F!important;}
+.statusBlueTree{color:#3CBCE5!important;}
+.statusBlueFour{color:#459BFC!important;}
+.statusBlueFive{color:#36AFD6!important;}
+/*表成功等状态*/
+.statusGreenOne{color:#2DC100!important;}
+.statusGreenTwo{color:#3AD0B1!important;}
+.statusGreenTree{color:#3ABFA3!important;}
+.statusGreenFour{color:#3BD7B6!important;}
+/*灰色状态*/
+.statusGreyOne{color:#999!important;}
+/*表危险状态*/
+
+.statusRedOne{color:#FC5874!important;}
+.statusRedTwo{color:#FF339D!important;}
+.statusRedTree{color:#FD8549!important;}
+/*特殊状态*/
+.statusPurpleOne{color:#755CF6!important;}
+.statusYellowOne{color:#FDB454!important;}
+.statusYellowTwo{color:#E5CC00!important;}
+/*删除头部标题*/
+/*d.content-wrapper{
+    .mr{display: none!important;}
+}*/
+.OperatorList-page{
+  .DeLiveryButton{border-left-color: #d9d9d9!important;}
+  .DeLiveryButton:hover{border-left-color: #4bd1f2!important;}
+  .DeLiveryButton:active{border-left-color: #1391bf!important;}
+  .ButtonRadius{border-radius:4px!important;}
+}
+.topnavbar-wrapper{
+    .userBox{&:hover{background: #229bc0;}}
+}
+.userPopover{
+    div{&:hover{background: #f5f5f5;color: #23b7e5;i{color: #23b7e5;;}};height: 30px;line-height: 30px;margin-bottom: 0;cursor: pointer;i{position: relative;top: -3px;margin-left: 10px;}}
+}
+.getMD5Box{
+    position:relative;overflow:hidden;
+    .ant-btn{z-index: 10;}
+    input{opacity:0;position:absolute;top:0;left:-80px;width:280px;cursor:pointer;z-index:12;height: 40px;}
+    &:hover{
+        .ant-btn{color: #4bd1f2;border-color:#4bd1f2;}
+    }
+}
+.AgencyChangeBox .panel{margin-bottom: 0;}
+.Popover{
+  height: 30px;
+  cursor: pointer;
+  line-height: 30px;
+}
+
+.my-editor {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../assets/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../../assets/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../../assets/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../../assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-size: normal;
+  font-weight: normal;
+}
+
+@import "../../containers/Login/style.scss";
+
+// pages
+@import "../../pages/Indexs/Index.scss";
+@import "../../pages/Setting/roleManager.scss";
+@import "../../pages/Equipment/CargoDetail.scss";
+@import "../../pages/Equipment/EquipmentInfoDetail.scss";
+@import "../../pages/Equipment/EquipmentLoseDetail.scss";
+@import "../../pages/Strategy/StrategyManagementDetail.scss";
+@import "../../pages/Stock/PurchasePurchase.scss";
+@import "../../pages/Stock/StockLists.scss";
+@import "../../pages/Stock/StockListsDetail.scss";
+@import "../../pages/Stock/PurchaseReturns.scss";
+@import "../../pages/Stock/WarehouseQuery.scss";
+@import "../../pages/Stock/WarehouseRun.scss";
+@import "../../pages/Stock/DeliveryOrder.scss";
+@import "../../pages/Stock/OrderReturns.scss";
+@import "../../pages/Stock/StockStatistics.scss";
+@import "../../pages/Stock/WarehouseTransfer.scss";
+@import "../../pages/Stock/PurchaseReview.scss";
+@import "../../pages/Stock/StockLists.scss";
+@import "../../pages/Site/BusinessDistrict.scss";
+@import "../../pages/Site/SiteManagement.scss";
+@import "../../pages/Site/pointManagementDetail.scss";
+@import "../../pages/Statistics/StatisticsHome.scss";
+//components
+@import "../../components/DataTable/style.scss";
+@import "../../components/Permission/style.scss";
+@import "../../components/SearchExpand/style.scss";

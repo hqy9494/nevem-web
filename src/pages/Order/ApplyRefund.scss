@@ -1,0 +1,57 @@
+.ApplyRefund{
+  .topSearch{margin-bottom: 10px!important;
+    .ant-form-item{display:flex;
+      .ant-form-item-label label{font-weight: normal!important;color: #000;}
+      .ant-form-item-label,.ant-form-item-control{line-height: 30px!important;text-align: left;}
+      .ant-form-item-control-wrapper{flex: 1 1;margin-right: 30px}
+    }
+    .ant-btn{height: 28px;}
+  }
+  .project-title{font-size: 15px;border-left:3px solid #45c2e9;font-weight: bold;
+    >span{display: inline-block;width:20px;height: 20px;background-size:100% 100%;margin-right: 10px;position: relative;top: 3px}
+    >span.wechat{background-image: url(../../assets/img/wechat.png)}
+    >span.alipay{background-image: url(../../assets/img/alipay.png)}
+    >span.caibao{background-image: url(../../assets/img/caibao.png)}
+  }
+  .imgbox{width: 233px;margin: 150px auto;height: auto;
+    img{width: 100%;opacity: 0.6;}
+  }
+  .ApplyContent{padding: 20px 0;border: 1px solid #e1e1e1;border-width:1px 0;display: flex;
+    >div{flex: 1;
+      .ApplyDataBox{
+        >div{margin-top: 4px}
+        .title{display: inline-block;width: 130px;text-align: right}
+        .text{
+          >span{display: inline-block;width:20px;height: 20px;background-size:100% 100%;margin-right: 10px;position: relative;top: 3px}
+          >span.wechat{background-image: url(../../assets/img/wechat.png)}
+          >span.alipay{background-image: url(../../assets/img/alipay.png)}
+          >span.caibao{background-image: url(../../assets/img/caibao.png)}
+        }
+      }
+    }
+    
+  }
+  /*.bottomContent{
+    margin-top:20px; 
+    .ApplyDataBox{
+      >div{margin-top: 4px}
+      .title{display: inline-block;width: 130px;text-align: right};
+    }
+  }*/
+}
+.ant-select-dropdown{
+  .ant-select-dropdown-menu{
+    .ApplyRefundOptions{
+      >span{display: inline-block;width:15px;height: 15px;background-size:100% 100%;margin-right: 10px;position: relative;top: 3px}
+      >span.wechat{background-image: url(../../assets/img/wechat.png)}
+      >span.alipay{background-image: url(../../assets/img/alipay.png)}
+      >span.caibao{background-image: url(../../assets/img/caibao.png)}
+    }
+  }
+}
+.ApplyRefundModal{
+  .ant-form-item{display:flex;
+    .ant-form-item-label,.ant-form-item-control{line-height: 30px!important;text-align: left;min-width:120px;}
+    .ant-form-item-control-wrapper{flex: 1 1;margin-right: 30px}
+  }
+}

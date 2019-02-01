@@ -1,0 +1,149 @@
+.o_cp_searchview {
+  min-height: 30px;
+}
+
+.o_searchview {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 1px 25px 3px 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  position: relative;
+  &:hover {
+    border-color: #23b7e5;
+    border-right-width: 1px !important;
+  }
+  &.o_searchview-select {
+    border-color: #23b7e5;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    border-right-width: 1px !important;
+  }
+}
+
+.o_searchview .o_searchview_autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: auto;
+  right: 0;
+  width: 100%;
+}
+.o-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 13px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.25);
+  background-clip: padding-box;
+}
+
+.o-dropdown-option {
+  position: relative;
+  display: block;
+  padding: 5px 24px;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.3s ease;
+  .anticon-right {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    background-color: rgba($color: #23b7e5, $alpha: 0.1);
+  }
+}
+
+.o-dropdown-child-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 13px;
+  text-align: left;
+  .o-dropdown-option {
+    padding-left: 45px;
+  }
+}
+
+.o_searchview .o_searchview_facet {
+  border: 1px solid #e8e8e8;
+  background: #fafafa;
+  flex: 0 0 auto;
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  margin: 1px 3px 0 0;
+}
+
+.o_searchview .o_searchview_facet .o_searchview_facet_label {
+  background-color: #e8e8e8;
+  flex: 0 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  padding: 0 3px;
+  color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+}
+
+.o_searchview .o_searchview_facet .o_facet_values {
+  padding: 0 18px 0 5px;
+}
+
+.o_searchview .o_searchview_facet .o_facet_remove {
+  color: #777777;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  cursor: pointer;
+}
+
+.o_searchview .o_searchview_input {
+  border: none;
+  padding: 4px 0 0 0;
+  display: block;
+  outline: none;
+  width: 100px;
+  flex: 1 0 auto;
+}
+
+.o_searchview-date {
+  display: flex;
+  margin-left: 24px;
+  .rdrCalendarWrapper {
+    display: block;
+    transform: translateY(-16px);
+  }
+}

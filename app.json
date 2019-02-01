@@ -1,0 +1,9 @@
+{
+  "name": "twiker-admin",
+  "script": "server/index.js",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 3003,
+    "port": 3003
+  }
+}

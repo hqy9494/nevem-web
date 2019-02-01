@@ -1,0 +1,16 @@
+.datatable {
+  .sorted {
+    position: relative;
+    &::after {
+      content: "\F0DC";
+      position: absolute;
+      top: 15px;
+      right: 8px;
+      display: block;
+      font-family: FontAwesome;
+      color: #ddd;
+      font-size: 0.8em;
+      padding-top: 0.12em;
+    }
+  }
+}

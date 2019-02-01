@@ -1,0 +1,61 @@
+.AsyncTableContainer{
+  .row{margin-left:0;margin-right: 0;}
+  .AsyncTable{padding: 6px 26px 6px 34px;background: #fff;
+    .HeaderNav{margin: 0!important;}
+    .tableExpand-sort-th {
+      position: relative;
+      cursor: pointer;
+      &::after {
+        font-size: 0.8em;
+        padding-top: 0.12em;
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        transform: translateY(-50%);
+        display: block;
+        font-family: FontAwesome;
+      }
+      &.tableExpand-sort-th-no { 
+        div{background: none!important;padding-right: 0px!important;}
+        background: url(../../assets/img/sortNormal.png) no-repeat right;
+        padding-right: 20px;
+      }
+      &.tableExpand-sort-th-asc {
+        div{background: none!important;padding-right: 0px!important;}
+        background: url(../../assets/img/sortUp.png)  no-repeat right; 
+        padding-right: 20px;
+      }
+      &.tableExpand-sort-th-desc {
+        padding-right: 20px;  
+        div{background: none!important;padding-right: 0px!important;}
+        background: url(../../assets/img/sortDown.png)  no-repeat right;
+      }
+    }
+    
+    .tableExpand-column-TextArea {
+      width: 400px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .breadcrumb{background: #fff!important;padding-left:0px;padding-right: 0;
+        .ant-btn{margin-right: 10px;
+            &:last-child{margin-right: 0px;}
+        }
+    }
+    .ant-tabs-bar{margin: 0!important;}
+    .ant-pagination-options-quick-jumper{margin-right: 3px;}
+    .TableExpand{margin-top: 16px;}
+  } 
+  .ant-table-pagination{
+      .ant-pagination-item-link,.ant-pagination-item-container{
+        position: relative;
+        height: 32px;
+        >i.anticon{position: absolute;left: 0;top: 0;bottom: 0;right: 0;margin: auto;height: 12px;}
+      }
+  }
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{border-bottom: 1px solid #fff;transition:null;}
+}
+
+.wrapper > section{background: #f4f4f4!important;}

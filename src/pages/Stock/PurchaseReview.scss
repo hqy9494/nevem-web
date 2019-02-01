@@ -1,0 +1,43 @@
+.PurchaseReview-page {
+}
+
+.PurchaseReview-dash-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 16px;
+  background-color: #fff;
+  .PurchaseReview-dash-icon {
+    width: 20%;
+    padding-bottom: 20%;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .PurchaseReview-dash-main {
+    .PurchaseReview-dash-num {
+      display: block;
+      font-size: 24px;
+      text-align: right;
+    }
+    .PurchaseReview-dash-title {
+      display: block;
+      color: #999;
+      text-align: right;
+    }
+  }
+}
+@each $header, $color in (bg1: #ed6b75, bg2: #f1c40f, bg3: #36c6d3, bg4: #337ab7, bg5: #337ab7, bg6: #337ab7) {
+  .#{$header} {
+    background-color: $color;
+  }
+}
+.PurchaseReview-status {
+  padding: 5px;
+  color: #fff;
+}
+
+
+
+

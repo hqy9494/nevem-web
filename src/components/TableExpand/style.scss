@@ -1,0 +1,40 @@
+.tableExpand-sort-th {
+  position: relative;
+  cursor: pointer;
+  &::after {
+    font-size: 0.8em;
+    padding-top: 0.12em;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+    display: block;
+    font-family: FontAwesome;
+  }
+  &.tableExpand-sort-th-no {
+    &::after {
+      color: #ddd;
+      content: "\F0DC";
+    }
+  }
+  &.tableExpand-sort-th-asc {
+    &::after {
+      color: #888;
+      content: "\F0DE";
+    }
+  }
+  &.tableExpand-sort-th-desc {
+    &::after {
+      color: #888;
+      content: "\F0DD";
+    }
+  }
+}
+
+.tableExpand-column-TextArea {
+  width: 400px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

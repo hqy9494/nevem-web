@@ -1,0 +1,160 @@
+.login-modal {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #252525;
+  // min-height: 391px;
+
+  .ant-card-body {
+    position: relative;
+  }
+}
+
+.login-modal-content {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+
+  .login-modal-tip {
+    position: absolute;
+    top: 10px;
+    right: 90px;
+    padding: 5px 8px 5px 24px;
+    font-size: 12px;
+    color: #3CBCE5;
+    background-color: #fff;
+    line-height: 1;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      content: " ";
+      width: 11px;
+      height: 13px;
+      background-image: url(../../assets/img/login/icon-1.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: -6px;
+      transform: translateY(-50%);
+      content: " ";
+      height: 0px;
+      width: 0px;
+      border-top: 5px solid transparent;
+      border-left: 10px solid #fff;
+      border-bottom: 5px solid transparent;
+    }
+  }
+
+  .login-modal-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 89px;
+    height: 86px;
+    cursor: pointer;
+  }
+
+  .login-modal-switch_phone {
+    background-image: url(../../assets/img/login/icon-2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .login-modal-switch_qr {
+    background-image: url(../../assets/img/login/icon-3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .login-modal-qrCode {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff;
+    display: inline-block;
+
+    &>div {
+      position: relative;
+      width: 166px;
+      height: 166px;
+    }
+
+    .login-modal-qrCode＿lose {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+
+      span {
+        font-size: 16px;
+        color: #000;
+      }
+    }
+
+    .login-modal-qrCode＿success {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+      // margin: -15px;
+
+      .anticon {
+        font-size: 60px;
+        color: #000;
+      }
+
+      span {
+        font-weight: bold;
+        margin-top: 18px;
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+
+  .login-modal-qrCode-desc {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+
+.login-modal-phone-form {
+  .ant-form-item-required {
+    float: left;
+    color: #fff;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .ant-form-explain {
+    float: left;
+  }
+}
